@@ -20,10 +20,8 @@ def main():
 
         screen.fill(color=BLACK)
         for item in updatable:
-            print(item)
             item.update(dt=dt)
         for item in drawable:
-            print(item)
             item.draw(screen=screen)
         pygame.display.flip()
 
