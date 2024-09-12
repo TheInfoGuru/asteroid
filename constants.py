@@ -1,8 +1,12 @@
+from pathlib import Path
+PROJECT_DIRECTORY = Path(__file__).parent
+
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
 SCREEN_COLOR = 'black'
 FONT_SIZE = 45
 FONT_COLOR = 'white'
+SCORE_FONT_PATH = f'{PROJECT_DIRECTORY}/fonts/sonic.ttf'
 SCORE_POSITION = (15, 15)
 FPS = 60
 

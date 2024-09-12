@@ -8,7 +8,7 @@ class Score(pygame.sprite.Sprite):
         else:
             super().__init__()
         self.position = position
-        self.font = pygame.font.Font(font_file, font_size)
+        self.font = pygame.font.Font(None, font_size)
         self.font_color = font_color
         self.score = 0
 

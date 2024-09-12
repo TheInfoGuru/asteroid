@@ -8,6 +8,7 @@ from asteroidfield import AsteroidField
 from shot import Shot
 from score import Score
 
+
 def handle_events():
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -54,7 +55,7 @@ def main():
     Score.containers = drawable
 
     player = Player(x=(SCREEN_WIDTH / 2), y=(SCREEN_HEIGHT / 2))
-    score = Score(font_size=FONT_SIZE, font_file='fonts/sonic.ttf', font_color=FONT_COLOR, position=SCORE_POSITION)
+    score = Score(font_size=FONT_SIZE, font_file=SCORE_FONT_PATH, font_color=FONT_COLOR, position=SCORE_POSITION)
     asteroid_field = AsteroidField()
 
     dt = 0
